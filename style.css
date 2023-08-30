@@ -1,0 +1,332 @@
+:root{
+    --sport-color:#f99500;
+    --secondary-color:#c72727;
+    --enter-color:#a66bbe;
+    --tech-color:#009cff;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color:#eee;
+}
+
+h1,h2{
+    font-family: 'Staatliches';
+}
+
+/* Utility classes */
+
+.sports{
+    background-color: var(--sport-color);
+    padding:0.5rem 0;
+    text-align: center;
+    width:60px;
+    font-size: 0.6rem;
+    border-radius:30px;
+    color:#fff;
+    margin-bottom: 0.5rem;
+}
+
+.entertainment{
+    background-color: var(--enter-color);
+    padding:0.5rem 0;
+    text-align: center;
+    width:100px;
+    font-size: 0.6rem;
+    border-radius:30px;
+    color:#fff;
+    margin-bottom: 0.5rem;
+}
+
+.technology{
+    background-color: var(--tech-color);
+    padding:0.5rem 0;
+    text-align: center;
+    width:90px;
+    font-size: 0.6rem;
+    border-radius:30px;
+    color:#fff;
+    margin-bottom: 0.5rem;
+}
+
+.size-img{
+    display: inline-block;
+    width: 300px;
+    height:200px;
+    margin:0.5rem 0.75rem;
+}
+
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul{
+    list-style: none;
+}
+
+.background-dark{
+    background-color:#333;
+    color:#f3f3f3;
+}
+
+.container{
+    padding:2rem;
+}
+
+/* Navigation Bar */
+.navigation-bar img{
+    display: inline-block;
+    width: 200px;
+}
+
+.navigation-bar{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index:2;
+    background-color: #fff;
+}
+
+.navigation-bar .tohome-toabout a{
+    padding:0.75rem 0.5rem;
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;   
+}
+
+.navigation-bar .tohome-toabout .current{
+    background-color: var(--secondary-color);
+    color : #f3f3f3;
+}
+
+.navigation-bar .tohome-toabout a:hover{
+    color:#000;
+    background-color:#eee;
+}
+
+/* Heading */
+.intro{ 
+    color:#fff;
+    padding:8rem 10rem;
+    position: relative;
+    background-color:rgba(63, 63, 63,0.7);
+}
+.intro div{
+    width:50%;
+}
+
+.intro:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/featured.jpg"); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:-1;
+}
+
+.intro h2 p{
+    margin-bottom: 2rem;
+}
+
+.intro .main-info{
+    margin-bottom:2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.intro .more-info{
+    background: var(--secondary-color);
+    padding:0.5rem 2rem;
+    display: inline-block;
+}
+
+.intro .more-info:hover{
+    background-color: rgba(255, 35, 35, 0.8);
+}
+
+
+/* gallery section */
+
+
+.gallery{
+    width:1100px  !important;
+    background-color:#eee;
+    display:grid;
+    grid-template-areas:
+    "editor-pics editor-pics editor-pics"
+    "part-1 part-1 part-2"
+    "part-3 part-4 part-5"
+    "part-6 part-7 part-7";
+    grid-gap:1rem;
+    padding:2rem 10rem;
+}
+
+/* .gallery{
+    background-color:#eee;
+} */
+
+/* #container{
+    display:grid;
+    grid-template-areas:
+    "editor-pics editor-pics editor-pics"
+    "part-1 part-1 part-2"
+    "part-3 part-4 part-5"
+    "part-6 part-7 part-7";
+    grid-gap:1rem;
+} */
+
+/* #container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+} */
+
+
+#part-1{
+    grid-area:part-1;
+    display:flex;
+}
+#part-2{
+    grid-area:part-2;
+}
+#part-3{
+    grid-area:part-3;
+}
+#part-4{
+    grid-area:part-4;
+}
+#part-5{
+    grid-area:part-5;
+}
+#part-6{
+    grid-area:part-6;
+}
+#part-7{
+    grid-area:part-7;
+    display: flex;
+}
+
+#part-1 , #part-3 , #part-4 , #part-5 , #part-7{
+    background-color:white;
+}
+
+#part-1 h2,#part-1 p{
+    margin:1rem 0.5rem;
+}
+#part-2 h2,#part-2 p{
+    margin:1rem 0.5rem;
+}
+#part-3 h2,#part-3 p{
+    margin:1rem 0.5rem;
+}
+#part-4 h2,#part-4 p{
+    margin:1rem 0.5rem;
+}
+#part-5 h2,#part-5 p{
+    margin:1rem 0.5rem;
+}
+#part-6 h2,#part-6 p{
+    margin:1rem 0.5rem;
+}
+#part-7 h2,#part-7 p{
+    margin:1rem 0.5rem;
+}
+
+#part-2{
+    background-color:#3f3f3f;
+    color:white;
+} 
+
+#part-6{
+    background-color:var(--secondary-color);
+    color:white;
+}
+
+/* #part-1{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column: 1/span2;
+    align-items: center;
+} */
+
+
+/* footerr */
+.main-footer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    grid-gap:1.5rem;
+}
+
+.main-footer img{
+    display:inline-block;
+    width:150px;
+    height:40px;
+    padding-bottom: 0.5rem;
+}
+
+.main-footer #copyright{
+    /* grid-column-start: 1;
+    grid-column-end:4 ; */
+    grid-column: 1/span4;
+    text-align: center;
+    background-color: rgba(243, 243, 243,0.2);
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.btn{
+    background: var(--secondary-color);
+    padding:0.5rem 2rem;
+    display: inline-block;
+    border:none;
+    margin-top:0.5rem;
+    color:white;
+}
+
+.main-footer #enter-email input{
+    height:2rem;
+    width:8rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.main-footer #site-link{
+    line-height: 2rem;
+
+}
+
+.main-footer #site-link ul li{
+    border-bottom: 3px dotted #3f3f3f;
+}
+
+.main-footer #site-link ul li:last-child{
+    border-bottom: none;
+}
+
+.main-footer #join-link .btn-primary{
+    background: var(--sport-color);
+    padding:0.5rem 2rem;
+    display: inline-block;
+    border:none;
+    margin-top:0.5rem;
+    color:white;
+}
